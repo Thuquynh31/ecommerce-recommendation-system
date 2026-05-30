@@ -2,7 +2,7 @@
 
 ## Giới thiệu
 
-Dự án xây dựng hệ thống đề xuất sản phẩm thương mại điện tử dựa trên dữ liệu sản phẩm Amazon. Hệ thống kết hợp nhiều phương pháp recommendation nhằm hỗ trợ cá nhân hóa trải nghiệm người dùng và cải thiện chất lượng gợi ý sản phẩm.
+Dự án xây dựng hệ thống đề xuất sản phẩm thương mại điện tử dựa trên dữ liệu sản phẩm Amazon (https://brightdata.com/cp/datasets/browse/gd_l7q7dkf244hwjntr0?id=hl_67a497d9&tab=sam). Hệ thống kết hợp nhiều phương pháp recommendation nhằm hỗ trợ cá nhân hóa trải nghiệm người dùng và cải thiện chất lượng gợi ý sản phẩm.
 
 Các phương pháp được sử dụng gồm:
 
