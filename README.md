@@ -1,10 +1,11 @@
 # E-Commerce Recommendation System
 
-## Giới thiệu
+## Introduction
 
-Dự án xây dựng hệ thống đề xuất sản phẩm thương mại điện tử dựa trên dữ liệu sản phẩm Amazon (https://brightdata.com/cp/datasets/browse/gd_l7q7dkf244hwjntr0?id=hl_67a497d9&tab=sam). Hệ thống kết hợp nhiều phương pháp recommendation nhằm hỗ trợ cá nhân hóa trải nghiệm người dùng và cải thiện chất lượng gợi ý sản phẩm.
+This project builds an e-commerce product recommendation system based on Amazon product data from [Bright Data](https://brightdata.com/cp/datasets/browse/gd_l7q7dkf244hwjntr0?id=hl_67a497d9&tab=sam&utm_source=chatgpt.com).
+The system combines multiple recommendation approaches to support personalized user experiences and improve product recommendation quality.
 
-Các phương pháp được sử dụng gồm:
+The project includes the following recommendation methods:
 
 * Popularity-Based Recommendation
 * Content-Based Recommendation
@@ -13,7 +14,7 @@ Các phương pháp được sử dụng gồm:
 
 ---
 
-## Kỹ thuật sử dụng
+## Techniques Used
 
 * Data Cleaning
 * Exploratory Data Analysis (EDA)
@@ -23,9 +24,9 @@ Các phương pháp được sử dụng gồm:
 
 ---
 
-## Đánh giá mô hình
+## Model Evaluation
 
-Các mô hình được đánh giá bằng:
+The models are evaluated using:
 
 * Average Rating@K
 * Precision@K
@@ -34,7 +35,7 @@ Các mô hình được đánh giá bằng:
 
 ---
 
-## Công nghệ sử dụng
+## Technologies Used
 
 * Python
 * Pandas
@@ -46,7 +47,7 @@ Các mô hình được đánh giá bằng:
 
 ---
 
-## Cấu trúc project
+## Project Structure
 
 ```bash
 ecommerce-recommendation-system/
@@ -74,21 +75,21 @@ ecommerce-recommendation-system/
 
 ---
 
-## Cách chạy project
+## How to Run the Project
 
-### 1. Clone repository
+### 1. Clone the repository
 
 ```bash
 git clone https://github.com/Thuquynh31/ecommerce-recommendation-system.git
 ```
 
-### 2. Cài đặt thư viện
+### 2. Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 3. Chạy project
+### 3. Run the project
 
 ```bash
 python main.py
@@ -96,8 +97,8 @@ python main.py
 
 ---
 
-## Hướng phát triển
+## Future Improvements
 
-* Sử dụng dữ liệu tương tác người dùng thực tế
-* Cải thiện độ chính xác của hệ thống đề xuất
-* Xây dựng giao diện web cho hệ thống
+* Use real user interaction data
+* Improve recommendation accuracy
+* Build a web interface for the system
