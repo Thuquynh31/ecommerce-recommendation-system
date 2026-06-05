@@ -2,15 +2,58 @@
 
 ## Introduction
 
-This project builds an e-commerce product recommendation system based on Amazon product data from [Bright Data](https://brightdata.com/cp/datasets/browse/gd_l7q7dkf244hwjntr0?id=hl_67a497d9&tab=sam&utm_source=chatgpt.com).
-The system combines multiple recommendation approaches to support personalized user experiences and improve product recommendation quality.
+This project develops an e-commerce product recommendation system using Amazon product data.
 
-The project includes the following recommendation methods:
+The system combines multiple recommendation techniques to improve product discovery and provide personalized recommendations for different user scenarios.
+
+### Recommendation Methods
 
 * Popularity-Based Recommendation
 * Content-Based Recommendation
 * Collaborative Filtering
 * Hybrid Recommendation System
+
+---
+
+## Application Demo
+
+### Demo Video
+
+[▶ Watch Application Demo](images/app_demo.mp4)
+
+The project includes a Streamlit web application that allows users to search for products and receive recommendations interactively.
+
+---
+
+## EDA Visualization
+
+### Missing Values Heatmap
+
+<img src="images/heatmap.png" width="700">
+
+### Rating Distribution
+
+<img src="images/plot_rating_distribution.png" width="700">
+
+### Price Distribution
+
+<img src="images/plot_price_distribution.png" width="700">
+
+### Price vs Rating
+
+<img src="images/plot_price_vs_rating.png" width="700">
+
+### Top Brands
+
+<img src="images/plot_top_brands.png" width="700">
+
+### Top Product Categories
+
+<img src="images/plot_top_departments.png" width="700">
+
+### Popular Products by Department
+
+<img src="images/plot_popular_products_by_department.png" width="700">
 
 ---
 
@@ -26,12 +69,21 @@ The project includes the following recommendation methods:
 
 ## Model Evaluation
 
-The models are evaluated using:
+The recommendation models were evaluated using:
 
 * Average Rating@K
 * Precision@K
 * RMSE
 * MAE
+
+### Evaluation Results
+
+| Model                           | Metric            | Result |
+| ------------------------------- | ----------------- | ------ |
+| Popularity-Based Recommendation | Average Rating@10 | 5.00   |
+| Content-Based Recommendation    | Precision@10      | 0.30   |
+| Collaborative Filtering         | RMSE              | 2.1196 |
+| Collaborative Filtering         | MAE               | 1.9116 |
 
 ---
 
@@ -43,6 +95,7 @@ The models are evaluated using:
 * Scikit-learn
 * Matplotlib
 * Seaborn
+* Streamlit
 * Jupyter Notebook
 
 ---
@@ -55,19 +108,30 @@ ecommerce-recommendation-system/
 ├── data/
 │   └── amazon_products.csv
 │
+├── images/
+│   ├── app_demo.mp4
+│   ├── heatmap.png
+│   ├── plot_popular_products_by_department.png
+│   ├── plot_price_distribution.png
+│   ├── plot_price_vs_rating.png
+│   ├── plot_rating_distribution.png
+│   ├── plot_top_brands.png
+│   └── plot_top_departments.png
+│
 ├── notebooks/
-│   └── recommendation_system.ipynb
+│   └── ecommerce_recommendation.ipynb
 │
 ├── src/
-│   ├── preprocessing.py
+│   ├── collaborative_model.py
+│   ├── content_based_model.py
 │   ├── eda.py
 │   ├── feature_engineering.py
+│   ├── hybrid_model.py
 │   ├── popularity_model.py
-│   ├── content_based_model.py
-│   ├── collaborative_model.py
-│   └── hybrid_model.py
+│   └── preprocessing.py
 │
 ├── .gitignore
+├── app.py
 ├── main.py
 ├── README.md
 └── requirements.txt
@@ -75,21 +139,31 @@ ecommerce-recommendation-system/
 
 ---
 
-## How to Run the Project
+## Installation
 
-### 1. Clone the repository
+### Clone Repository
 
 ```bash
 git clone https://github.com/Thuquynh31/ecommerce-recommendation-system.git
 ```
 
-### 2. Install dependencies
+### Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 3. Run the project
+---
+
+## Run the Project
+
+### Run Streamlit Application
+
+```bash
+python -m streamlit run app.py
+```
+
+### Run Main Script
 
 ```bash
 python main.py
@@ -101,4 +175,11 @@ python main.py
 
 * Use real user interaction data
 * Improve recommendation accuracy
-* Build a web interface for the system
+* Deploy the Streamlit application online
+* Integrate image-based product recommendations
+
+---
+
+## Author
+
+**Thu Quynh**
