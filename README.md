@@ -3,6 +3,7 @@
 ## Introduction
 
 This project develops an e-commerce product recommendation system using Amazon product data.
+(https://brightdata.com/cp/datasets/browse/gd_l7q7dkf244hwjntr0?id=hl_67a497d9&tab=sam)
 
 The system combines multiple recommendation techniques to improve product discovery and provide personalized recommendations for different user scenarios.
 
